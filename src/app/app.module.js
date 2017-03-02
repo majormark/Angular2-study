@@ -22,6 +22,7 @@ var hero_detail_component_1 = require('./hero-detail.component');
 var heroes_component_1 = require('./heroes.component');
 var hero_service_1 = require('./hero.service');
 var hero_search_component_1 = require('./hero-search.component');
+//上面这些import都是JavaScript级别的import，和angular毫无关系
 var AppModule = (function () {
     function AppModule() {
     }
@@ -42,7 +43,7 @@ var AppModule = (function () {
                 hero_search_component_1.HeroSearchComponent
             ],
             providers: [hero_service_1.HeroService],
-            bootstrap: [app_component_1.AppComponent]
+            bootstrap: [app_component_1.AppComponent] //会被放到browser DOM中，通常就一个，会触发component tree的创建
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

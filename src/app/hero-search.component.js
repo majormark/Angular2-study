@@ -53,7 +53,7 @@ var HeroSearchComponent = (function () {
             selector: 'hero-search',
             templateUrl: './hero-search.component.html',
             styleUrls: ['./hero-search.component.css'],
-            providers: [hero_search_service_1.HeroSearchService]
+            providers: [hero_search_service_1.HeroSearchService] //只是这个component可见
         }), 
         __metadata('design:paramtypes', [hero_search_service_1.HeroSearchService, router_1.Router])
     ], HeroSearchComponent);
